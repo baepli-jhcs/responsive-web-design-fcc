@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="style.css">
+<header>
+    <h1 id="title">
+        Pet Ownership!
+    </h1>
+    <p id="description"> Are you a pet owner? Become a member of our exclusive club!</p>
+</header>
+
+<form id="survey-form">
+    <label id="name-label" for="name">Name:</label>
+    <input id="name" placeholder="Enter your name" type="text" required> </input>
+    <label id="email-label" for="email">Email:</label>
+    <input id="email" placeholder="Enter your email" type="email" required>
+    <label id="number-label" for="number">Number:</label>
+    <input id="number" placeholder="Enter your number" type="number" min="100000" max="9999999999">
+    <p> How much experience do you have with owning a pet?</p>
+    <select id="dropdown">
+        <option value=”none”>No Experience</option>
+        <option value=”little”>Some Experience</option>
+        <option value="experienced"> Experienced </option>
+    </select>
+    <p> Would you like to join our newsletter?</p>
+    <div class="radio">
+        <label><input name="join" value="yes" type="radio" checked /> Yes </input></label>
+        <label> <input name="join" value="no" type="radio" /> No </input></label>
+    </div>
+    <p> What types of pets do you have?</p>
+    <div class="checkboxes">
+        <label><input name="dogs" value="dogs" type="checkbox" for="dogs"> Dogs</input></label>
+        <label><input name="cats" value="cats" type="checkbox" for="cats"> Cats</input></label>
+        <label><input name="fish" value="fish" type="checkbox" for="fish"> Fish</input></label>
+    </div>
+    <p>Any Addditional Comments? </p>
+    <textarea> </textarea>
+    <input id="submit" name="submit" type="submit" for="submit"> </input>
+</form>
